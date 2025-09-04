@@ -1,75 +1,88 @@
-# Laravel 11 API with Breeze and Sanctum
+# ⚖️ Juris News API
 
-Starterpack for make application based on Laravel 11 and API Breeze Package
+Backend em **Laravel 11** para o sistema **Juris News**, um assistente jurídico digital que organiza e distribui as últimas notícias da área jurídica.  
+A API fornece autenticação segura, gerenciamento de usuários e integrações para consumo no frontend.
 
-### Stack & Package
+---
 
--   Laravel 11.7.0
--   Laravel Breeze (API)
+## 🚀 Stack & Pacotes
+
+-   [Laravel 11.7.0](https://laravel.com/)
+-   [Laravel Breeze (API)](https://laravel.com/docs/11.x/starter-kits#breeze-and-api)
+-   [Laravel Sanctum](https://laravel.com/docs/11.x/sanctum) — autenticação por tokens
 -   [Laravel Permission v6.x](https://spatie.be/docs/laravel-permission/v6/introduction)
 -   [Laravel Backup v8.x](https://spatie.be/docs/laravel-backup/v8/introduction)
--   [Laravel Setting](https://github.com/spatie/laravel-settings)
+-   [Laravel Settings](https://github.com/spatie/laravel-settings)
 -   [Laravel Log Activity v4.x](https://spatie.be/docs/laravel-activitylog/v4/introduction)
 
-### Usage
+---
 
--   Clone repository
--   Clone `.env` file from `.env.example`
--   Setting `.env` variable with your local/production setup
--   Add location of dump binary mysql database to `MYSQL_DUMP_PATH` variable on `.env` file.
--   Update Composer
+## ⚡ Instalação & Uso
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/emanuelleLS/juris-newss.git
+cd juris-newss
+```
+
+2. Copie o arquivo `.env.example` para `.env` e configure suas variáveis de ambiente (DB, Mail, etc):
+
+```bash
+cp .env.example .env
+```
+
+3. Atualize as dependências do Composer:
 
 ```bash
 composer update
 ```
 
--   Generate Key
+4. Gere a chave da aplicação:
 
 ```bash
 php artisan key:generate
 ```
 
--   Migrate database structure
+5. Execute as migrações do banco de dados:
 
 ```bash
 php artisan migrate
 ```
 
--   Add Dummy Data of user
+6. (Opcional) Popule dados iniciais:
 
 ```bash
 php artisan db:seed
 ```
 
--   Storage Link
+7. Crie o link de storage:
 
 ```bash
 php artisan storage:link
 ```
 
--   Run localhost
+8. Rode o servidor local:
 
 ```bash
 php artisan serve
 ```
 
--   Run Queue
+9. Execute o worker de filas (se necessário):
 
 ```bash
 php artisan queue:work
 ```
 
-Visit Localhost (http://localhost:8000/)
+---
 
-### API Documentation
+## 📖 Documentação da API
 
-Visit Postman Docs (https://documenter.getpostman.com/view/1487227/2sA3JKchQc)
+(Em breve será disponibilizada documentação no Postman/Swagger)
 
-### Licensing
+---
 
--   Copyright 2023 [Raincode.My.Id](https://raincode.my.id)
--   Licensed under **MIT**
+## 📜 Licença
 
-### Donation
-
-Buy Me some Cofee and Snack with Donate me at [Saweria](https://saweria.co/raincodemyid)
+Este projeto está licenciado sob a **MIT License**.  
+© 2025 — Desenvolvido por **Emanuelle Lino Scheifer**
