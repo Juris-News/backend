@@ -81,8 +81,4 @@ php artisan queue:work
 (Em breve será disponibilizada documentação no Postman/Swagger)
 
 ---
-
-## 📜 Licença
-
-Este projeto está licenciado sob a **MIT License**.  
 © 2025 — Desenvolvido por **Emanuelle Lino Scheifer**
